@@ -83,7 +83,6 @@ header h1 {
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
 }
-
 /* Bottom navigation styles */
 .bottom-nav {
   position: fixed;
@@ -94,6 +93,8 @@ header h1 {
   padding: 1rem;
   text-align: center;
   border-top: 2px solid #0f0;
+  display: flex;
+  justify-content: center;
 }
 
 .bottom-nav h1 {
@@ -101,11 +102,33 @@ header h1 {
   display: inline-block;
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
+  margin-right: 1rem;
 }
 
-.bottom-nav form {
-  display: inline-block;
-  margin-left: 1rem;
+.bottom-nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.bottom-nav input[type="text"] {
+.bottom-nav li {
+  margin-right: 1rem;
+}
+
+.bottom-nav a {
+  color: #0f0;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  border: 2px solid #0f0;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.bottom-nav a:hover {
+  background-color: #0f0;
+  color: #111;
+}
